@@ -356,3 +356,8 @@ This project is a continuation of [Quorinex/Kiro-Go](https://github.com/Quorinex
 <div align="center">
 <sub>Built with ❤️ in Go · If this saved you time, drop a ⭐ on the repo.</sub>
 </div>
+
+
+------------
+go run .
+$env:ADMIN_PASSWORD="something"; $env:LOG_LEVEL="info"; go run .
