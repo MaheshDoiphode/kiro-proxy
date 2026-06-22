@@ -366,3 +366,12 @@ $env:GOFLAGS="-mod=vendor"
 $env:GOPROXY="off"
 $env:GOSUMDB="off"
 go run .
+
+
+---
+$env:GOFLAGS="-mod=vendor"; $env:GOPROXY="off"; $env:GOSUMDB="off"; go run .
+
+# from the project root — should list 38 .go files
+(Get-ChildItem .\proxy\*.go).Count
+# vendor sanity check
+Test-Path .\vendor\modules.txt
