@@ -361,3 +361,8 @@ This project is a continuation of [Quorinex/Kiro-Go](https://github.com/Quorinex
 ------------
 go run .
 $env:ADMIN_PASSWORD="something"; $env:LOG_LEVEL="info"; go run .
+
+$env:GOFLAGS="-mod=vendor"
+$env:GOPROXY="off"
+$env:GOSUMDB="off"
+go run .
